@@ -1,0 +1,17 @@
+<h1> <%= @user_sign.capitalize %> </h1>
+
+<div>
+<%= @horoscope %>
+</div>
+
+<p>Your lucky numbers for today are:</p>
+
+<ul>
+
+<% @luckynums.each do |a_num| %>
+  <li>
+    <%= a_num %>
+  </li>
+<% end %>
+
+</ul>
